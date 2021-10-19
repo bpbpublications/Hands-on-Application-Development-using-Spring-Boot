@@ -1,0 +1,10 @@
+243  2021-03-23 17:43:24.537[main] ERROR
+				c.b.p.RandomNumberApplication - Error log from RandomNumberApplication for logging level ERROR
+847  2021-03-23 17:43:25.141[main] INFO 
+				c.b.p.RandomNumberApplication - Starting RandomNumberApplication using Java 1.8.0_261 on shagun-pc with PID 14116 (C:\Users\PCW\Documents\workspace-spring-tool-suite-4-4.7.1.RELEASE\random-number-project\target\classes started by Shagun Bakliwal in C:\Users\PCW\Documents\workspace-spring-tool-suite-4-4.7.1.RELEASE\random-number-project)
+848  2021-03-23 17:43:25.142[main] INFO 
+				c.b.p.RandomNumberApplication - No active profile set, falling back to default profiles: default
+849  2021-03-23 17:43:25.143[main] DEBUG
+				o.s.boot.SpringApplication - Loading source class com.bpb.publications.RandomNumberApplication
+898  2021-03-23 17:43:25.192[main] DEBUG
+				o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a18644

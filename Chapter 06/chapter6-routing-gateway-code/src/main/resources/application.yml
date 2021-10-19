@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: routing-gateway
+
+server:
+  port: 8083

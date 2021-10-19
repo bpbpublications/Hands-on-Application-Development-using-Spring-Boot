@@ -1,0 +1,26 @@
+server:
+  port: 8081
+spring:
+#  profiles:
+#    active: prod
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    url: jdbc:mysql://localhost:3306/bpb
+    username: root
+    password: root
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  server:
+    port: 9009
+  endpoint:
+    health:
+      show-details: always

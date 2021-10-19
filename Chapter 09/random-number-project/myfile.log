@@ -1,0 +1,6 @@
+846393 2021-03-23 17:57:30.687[RMI TCP Connection(17)-127.0.0.1] INFO 
+				o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+846396 2021-03-23 17:57:30.690[RMI TCP Connection(17)-127.0.0.1] DEBUG
+				o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a18644, started on Tue Mar 23 17:43:25 IST 2021
+847105 2021-03-23 17:57:31.399[RMI TCP Connection(17)-127.0.0.1] INFO 
+				o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

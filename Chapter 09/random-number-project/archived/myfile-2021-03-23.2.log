@@ -1,0 +1,16 @@
+2931 2021-03-23 17:43:27.225[main] INFO 
+				o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+3032 2021-03-23 17:43:27.326[main] INFO 
+				o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+3032 2021-03-23 17:43:27.326[main] DEBUG
+				o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+3032 2021-03-23 17:43:27.326[main] INFO 
+				o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2134 ms
+3048 2021-03-23 17:43:27.342[main] DEBUG
+				o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+3050 2021-03-23 17:43:27.344[main] DEBUG
+				o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+3072 2021-03-23 17:43:27.366[main] DEBUG
+				o.s.b.w.s.f.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
+3073 2021-03-23 17:43:27.367[main] DEBUG
+				o.s.b.w.s.f.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use

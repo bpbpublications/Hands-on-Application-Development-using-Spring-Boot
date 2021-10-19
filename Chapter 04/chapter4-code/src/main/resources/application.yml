@@ -1,0 +1,17 @@
+harddisk:  
+  config:  
+    size: 2TB  
+    brand: Seagate  
+    price: 6300  
+  
+server:  
+  port: 8081  
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  
+complex:
+  values: 1,2,3,4,5
+ 

@@ -1,0 +1,16 @@
+3073 2021-03-23 17:43:27.367[main] DEBUG
+				o.s.b.w.s.f.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
+3229 2021-03-23 17:43:27.523[main] INFO 
+				o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+3243 2021-03-23 17:43:27.537[main] DEBUG
+				o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+3300 2021-03-23 17:43:27.594[main] DEBUG
+				o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+3327 2021-03-23 17:43:27.621[main] DEBUG
+				o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+3334 2021-03-23 17:43:27.628[main] DEBUG
+				o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+3361 2021-03-23 17:43:27.655[main] DEBUG
+				o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+3409 2021-03-23 17:43:27.703[main] INFO 
+				o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7001"]

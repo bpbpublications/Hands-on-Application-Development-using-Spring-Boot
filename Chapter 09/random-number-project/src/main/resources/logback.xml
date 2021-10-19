@@ -1,0 +1,56 @@
+<configuration>
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%black(%d{ISO8601}) %highlight(%-5level) [%blue(%t)] %yellow(%C{1.}): %msg%n%throwable</Pattern>
+		</layout>
+
+		<!-- <encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}- %msg%n</pattern>
+		</encoder> -->
+	</appender>
+	
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		<file>myfile.log</file>
+		<append>true</append>
+		<encoder>
+			<pattern>%-4relative %d{yyyy-MM-dd HH:mm:ss.SSS}[%thread] %-5level %logger{35} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="FILE_ROLLING"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>myfile.log</file>
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>%-4relative %d{yyyy-MM-dd HH:mm:ss.SSS}[%thread] %-5level %logger{35} - %msg%n</Pattern>
+		</encoder>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>archived/myfile-%d{yyyy-MM-dd}.%i.log
+			</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>1KB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+	</appender>
+
+	<root level="info">
+		<appender-ref ref="FILE_ROLLING" />
+	</root>
+	
+	<root level="info">
+		<appender-ref ref="FILE" />
+	</root>
+
+	<root level="debug">
+		<appender-ref ref="STDOUT" />
+	</root>
+	
+	<logger name="com.bpb.publications" level="debug" />
+	<root level="info">
+		<appender-ref ref="STDOUT" />
+	</root>  
+	
+</configuration> 

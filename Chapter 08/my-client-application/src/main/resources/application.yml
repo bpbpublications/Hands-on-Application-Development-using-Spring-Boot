@@ -1,0 +1,74 @@
+debug: true
+spring:
+  application:
+    name: my-client-application
+server:
+  port: 8888
+management:
+  server:
+    port: 9999
+  endpoint:
+    metrics:
+      enabled: true
+    health:
+      enabled: true
+      show-details: always
+    circuitbreakers:
+      enabled: true
+    
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  health:
+    circuitbreakers:
+      enabled: true        
+  metrics:
+    enable:
+      resilience4j:
+        circuitbreaker:
+            calls: true
+    distribution:
+      percentiles-histogram:
+        http:
+          server:
+            requests: true
+        resilience4j:
+          circuitbreaker:
+            calls: true
+
+resilience4j:
+  retry:
+    instances:
+      random-number-generator-circuit-breaker:
+        max-attempts: 4
+        wait-duration: 1s
+        retry-exceptions:
+          - org.springframework.web.client.ResourceAccessException
+          - java.net.ConnectException
+  bulkhead:
+    instances:
+      random-number-generator-circuit-breaker:
+        max-wait-duration: 2000ms
+        max-concurrent-calls: 2
+  thread-pool-bulkhead:
+    instances:
+      random-number-generator-circuit-breaker:
+        max-thread-pool-size: 1
+        core-thread-pool-size: 1
+        queue-capacity: 1
+        
+
+  circuitbreaker:
+    instances:
+      random-number-generator-circuit-breaker:
+        wait-duration-in-open-state: 5s
+        failure-rate-threshold: 50
+        sliding-window-size: 20
+        sliding-window-type: count-based
+        minimum-number-of-calls: 5
+        permitted-number-of-calls-in-half-open-state: 1
+        automatic-transition-from-open-to-half-open-enabled: true
+        register-health-indicator: true
+        slow-call-duration-threshold: 7000
+        slow-call-rate-threshold: 50

@@ -1,0 +1,22 @@
+1846 2021-03-23 17:43:26.140[main] DEBUG
+				o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: C:\Users\PCW\.m2\repository\org\springframework\boot\spring-boot\2.4.3\spring-boot-2.4.3.jar
+1850 2021-03-23 17:43:26.144[main] DEBUG
+				o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: C:\Users\PCW\.m2\repository\org\springframework\boot\spring-boot\2.4.3\spring-boot-2.4.3.jar
+1850 2021-03-23 17:43:26.144[main] DEBUG
+				o.s.b.w.e.t.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+1872 2021-03-23 17:43:26.166[main] INFO 
+				o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7001 (http)
+1881 2021-03-23 17:43:26.175[main] INFO 
+				o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7001"]
+1883 2021-03-23 17:43:26.177[main] INFO 
+				o.a.catalina.core.StandardService - Starting service [Tomcat]
+1883 2021-03-23 17:43:26.177[main] INFO 
+				o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+1885 2021-03-23 17:43:26.179[main] INFO 
+				o.a.c.core.AprLifecycleListener - An older version [1.2.17] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+1885 2021-03-23 17:43:26.179[main] INFO 
+				o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+1886 2021-03-23 17:43:26.180[main] INFO 
+				o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+1886 2021-03-23 17:43:26.180[main] INFO 
+				o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]

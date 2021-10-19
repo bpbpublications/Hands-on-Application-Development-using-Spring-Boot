@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: random-number-project
+server:
+  port: 7001

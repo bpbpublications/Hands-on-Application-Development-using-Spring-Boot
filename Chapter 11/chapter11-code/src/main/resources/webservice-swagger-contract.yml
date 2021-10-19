@@ -1,0 +1,43 @@
+---  
+swagger: '2.0'  
+info:  
+  description: The project contains APIs for managing Authors Information  
+  version: API v1  
+  title: Web Service for Authors  
+  termsOfService: These are my terms of service  
+  contact:  
+    name: Developer  
+    url: www.webaddress.com  
+    email: abcd@emailprovider.com  
+  license:  
+    name: This is the license of API  
+    url: www.mylicencekey.com  
+host: localhost:8082  
+basePath: "/"  
+tags:  
+- name: Author Info, Manage author  
+  description: This controller contains all the endpoints that can manage author information
+definitions:  
+  AuthorVO:  
+    type: object  
+    required:  
+    - name  
+    properties:  
+      bio:  
+        type: string  
+        description: This is the bio of the author  
+        minLength: 0  
+        maxLength: 500  
+      name:  
+        type: string  
+        example: Shagun  
+        description: This is the name of the author  
+        minLength: 0  
+        maxLength: 20  
+      url:  
+        type: string  
+        example: www.example.com  
+        description: This is the url of the author  
+        minLength: 0  
+        maxLength: 50  
+    title: AuthorVO
